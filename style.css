@@ -1,7 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&family=Oswald:wght@300&display=swap");
+:root {
+  --on-title: #eddcc9;
+  --on-background-header-footer: #031e30;
+  --on-section-text: #1d100a;
+  --on-navigation: #1d100a;
+  --section-background: #eddcc9;
+  --title-font: "Oswald", sans-serif;
+  --text-font: "EB Garamond", serif;
+}
+
 html {
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 body {
   margin: 0;
   min-height: 100vh;
+  background-color: #0f2d3d;
+}
+h1 {
+  text-transform: uppercase;
+  color: var(--on-title);
+  font-family: var(--title-font);
+  font-size: 9rem;
+  letter-spacing: 1rem;
+}
+p {
+  color: var(--on-p);
+  font-family: var(--text-font);
+  font-size: 4rem;
+  letter-spacing: 0.1rem;
 }
