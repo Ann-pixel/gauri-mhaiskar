@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&family=Oswald:wght@300&display=swap");
 :root {
-  --on-title: #abc7d8;
+  --on-title: #a5c1d1;
   --onsub-title: #1a3d4c;
   --on-background-header-footer: #091419;
   /* --on-background-header-footer: #2a5470; */
   --on-section-text: #091419;
   --on-navigation: #091419;
-  --section-background: #b0d4e9;
+  --section-background: #a5c1d1;
   --title-font: "Oswald", sans-serif;
   --text-font: "EB Garamond", serif;
 }
@@ -62,12 +62,7 @@ h1 {
   letter-spacing: 3rem;
   margin: 0 2rem;
 }
-p {
-  color: var(--on-p);
-  font-family: var(--text-font);
-  font-size: 4rem;
-  letter-spacing: 0.1rem;
-}
+
 .navigation {
   display: flex;
   justify-content: space-around;
@@ -90,4 +85,37 @@ p {
   height: 4px;
   width: inherit;
   background-color: var(--onsub-title);
+}
+.projects {
+  margin: 3rem 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 3rem auto;
+}
+.project::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: inherit;
+
+  background-color: var(--on-background-header-footer);
+}
+.project img {
+  width: 50rem;
+  height: 30rem;
+}
+.project p {
+  margin: auto 2rem;
+  color: var(--onsub-title);
+  font-family: var(--text-font);
+  font-size: 4rem;
+  letter-spacing: 0.1rem;
+  text-align: justify;
 }
