@@ -79,6 +79,9 @@ h1 {
   color: var(--on-section-text);
   letter-spacing: 1rem;
 }
+.nav-items:hover {
+  color: var(--onsub-title);
+}
 .nav-items::after {
   content: "";
   display: block;
@@ -92,7 +95,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 60%;
+  max-width: 75%;
 }
 .project {
   display: flex;
@@ -116,6 +119,8 @@ h1 {
 .image-text img {
   width: 50rem;
   height: 30rem;
+  border-radius: 10px;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
 }
 .image-text p {
   font-family: var(--title-font);
@@ -144,4 +149,18 @@ footer {
 footer p {
   margin: 4rem auto;
   font-size: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
 }
