@@ -1,21 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Montserrat:wght@300&display=swap");
 :root {
-  --on-title: #d8a68d;
+  /* --on-title: #d8a68d; */
   /* --on-title: #ebe994; */
-  /* --on-title: #9adce7; */
+  /* --on-title: #99c9cc; */
   /* --on-title: #5ba554; */
+  --on-title: #4c979c;
 
-  --section-background: #f3e1d8;
+  /* --section-background: #fff9f6; */
   /* --section-background: #f5eecf; */
-  /* --section-background: #dcfbff; */
+  /* --section-background: #d2e2e2; */
+  /* --project-background: #d2dddd; */
   /* --section-background: #d4f0d8; */
-
+  --background-on-body: #f0fcff;
   --onsub-title: #817e7e;
-  --on-line: #e2b9a694;
+  --on-line: #99c9cc3d;
   --on-background-header-footer: #444141;
   --on-section-text: #444141;
   --on-navigation: #444141;
-
+  --project-background: #e0e6e7ab;
   --title-font: "Montserrat", sans-serif;
   --text-font: "Lora", serif;
 }
@@ -27,7 +29,9 @@ html {
 body {
   margin: 0;
 
-  background: var(--section-background);
+  /* background: var(--section-background); */
+  background-color: var(var(--background-on-body));
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='29' height='29' fill-opacity='0.15' fill='%234c979c'/%3E%3C/svg%3E");
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -95,53 +99,54 @@ h1 {
 /* projects */
 .projects {
   margin: 3rem auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  width: 80%;
+  grid-gap: 3rem;
 }
 .project {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  margin: 3rem 0;
+  border-radius: 10px;
+  border: 1px solid var(--on-line);
+  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.2);
+  background-color: var(--project-background);
 }
 
-.image-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.image-text img {
-  width: 50rem;
-  height: 30rem;
+.project-image {
+  max-width: 100%;
+  height: 90%;
+  /* height: 20rem; */
   border-radius: 10px;
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
 }
-.image-text p {
-  font-family: var(--title-font);
-  color: var(--on-background-header-footer);
-  font-size: 2rem;
-  letter-spacing: 0.5rem;
-  margin-top: 0;
-}
-.description {
-  margin: auto 2rem;
-  color: var(--onsub-title);
+.project-title {
   font-family: var(--text-font);
-  font-size: 2.5rem;
-  letter-spacing: 0.1rem;
-  text-align: justify;
+  color: var(--on-title);
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+  margin-top: 1rem;
 }
-.project-line {
+.project-title::after {
   content: "";
   display: block;
   height: 3px;
   width: inherit;
   background-color: var(--on-line);
 }
+.description {
+  margin: auto 2rem;
+  color: var(--on-section-text);
+  font-family: var(--title-font);
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  text-align: justify;
+  font-weight: 600;
+}
+
 /* about */
 .about {
   margin: 3rem auto;
@@ -189,10 +194,18 @@ footer p {
   html {
     font-size: 55%;
   }
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+  }
 }
 @media screen and (max-width: 600px) {
   html {
     font-size: 50%;
+  }
+  .projects {
+    grid-template-columns: repeat(1, 1fr);
+    width: 80%;
   }
 }
 @media screen and (max-width: 500px) {
