@@ -108,14 +108,8 @@ h1 {
 }
 .project {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  border-radius: 10px;
-  border: 1px solid var(--on-line);
-  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.2);
-  background-color: var(--project-background);
   position: relative;
+  transition: all 0.2s;
 }
 
 .buttons-container {
@@ -124,6 +118,7 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   display: none;
+  transition: all 0.2s;
 }
 
 .button {
@@ -137,6 +132,7 @@ h1 {
   padding: 1rem 2rem;
   color: var(--background-on-body);
   margin: 1rem auto;
+  text-align: center;
 }
 .button:hover {
   filter: brightness(1.2);
@@ -150,6 +146,7 @@ h1 {
   border: 1px solid var(--on-line);
   box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.2);
   background-color: var(--project-background);
+  padding: 0.5rem;
 }
 .project-image {
   max-width: 100%;
@@ -183,7 +180,7 @@ h1 {
 }
 
 .project:hover .image-text-container {
-  filter: brightness(0.1);
+  filter: brightness(0.2);
 }
 .project:hover .buttons-container {
   display: flex;
