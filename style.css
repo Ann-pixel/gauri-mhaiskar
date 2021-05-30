@@ -215,6 +215,38 @@ h1 {
   margin-left: 3rem;
 }
 
+/* connect */
+.connect {
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.connect h1 {
+  font-size: 4rem;
+}
+.icon-container {
+  margin: 4rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  font-size: 6rem;
+  margin: auto 3rem;
+  color: var(--on-background-header-footer);
+}
+.icons .p {
+  font-family: var(--text-font);
+}
+
 /* footer */
 footer {
   color: var(--on-title);
