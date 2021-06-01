@@ -28,7 +28,7 @@ html {
 }
 body {
   margin: 0;
-
+  overflow-x: hidden;
   background: var(--section-background);
   background-color: var(var(--background-on-body));
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='29' height='29' fill-opacity='0.15' fill='%234c979c'/%3E%3C/svg%3E");
@@ -225,6 +225,8 @@ h1 {
 }
 .connect h1 {
   font-size: 4rem;
+  letter-spacing: 0.5rem;
+  text-align: center;
 }
 .icon-container {
   margin: 4rem auto;
@@ -239,14 +241,18 @@ h1 {
   align-items: center;
 }
 .icon {
-  font-size: 6rem;
-  margin: auto 3rem;
+  font-size: 7rem;
+  margin: auto 6rem;
   color: var(--on-background-header-footer);
 }
-.icons .p {
+.icons p {
   font-family: var(--text-font);
+  font-size: 2.5rem;
+  margin-top: 0;
 }
-
+.icon:hover {
+  color: var(--on-title);
+}
 /* footer */
 footer {
   color: var(--on-title);
