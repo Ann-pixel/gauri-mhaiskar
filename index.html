@@ -20,20 +20,31 @@
         <h2>web developer</h2>
       </div>
     </section>
-    <section class="navigation">
-      <h3 class="nav-items about-nav">About</h3>
-      <h3 class="nav-items projects-nav">Projects</h3>
-      <h3 class="nav-items connect-nav">Connect</h3>
-    </section>
+    <!------------NAVIGATION------------->
 
+    <section class="navigation">
+      <span class="nav-bg"></span>
+      <h3 class="nav-items about-nav" title="Click to know about me!">About</h3>
+      <h3
+        class="nav-items projects-nav"
+        title="Click to check out some of my work!"
+      >
+        Projects
+      </h3>
+      <h3 class="nav-items connect-nav" title="Click to get in touch!">
+        Connect
+      </h3>
+    </section>
+    <!---------------ABOUT------------------>
     <section id="about" class="about hidden">
       <img src="img/Gauri in Rockies.jpg" alt="" />
       <div class="about-intro">
         <p>
-          Hi! I'm Gauri. Welcome to my website. I am a self-taught full-stack
-          web developer. I enjoy hiking, cooking, photography & coding.
+          Hi! I'm Gauri. I am a self-taught full-stack web developer. I enjoy
+          hiking, cooking, photography & coding.
         </p>
         <div class="skills">
+          <h4>Skills</h4>
           <ul class="skills-list">
             <li>Javascript(ES-6)</li>
             <li>MongoDB & Mongoose</li>
@@ -48,83 +59,9 @@
 
       <!-- add a resume. make sure to add more resume stuff here. -->
     </section>
+    <!--------------PROJECTS ----------------->
     <section id="projects" class="projects hidden">
-      <div class="project">
-        <div class="buttons-container">
-          <a
-            href="https://ann-pixel.github.io/bankist-portfolio/"
-            target="_blank"
-            class="button live"
-            >View Live</a
-          >
-          <a
-            href="https://github.com/Ann-pixel/bankist-portfolio"
-            target="_blank"
-            class="button code"
-            >Source Code</a
-          >
-        </div>
-        <div class="image-text-container">
-          <img class="project-image" src="/img/bankist.png" alt="" />
-          <p class="project-title">Bankist- landing page</p>
-          <p class="description">
-            Marketing page for a banking application. Built using advanced DOM
-            traversing and browser tools such as the Intersection Observer API.
-          </p>
-        </div>
-      </div>
-      <!-- <span class="project-line"></span> -->
-      <div class="project">
-        <div class="buttons-container">
-          <a
-            href="https://ann-pixel.github.io/mapME-portfolio/"
-            target="_blank"
-            class="button live"
-            >View Live</a
-          >
-          <a
-            href="https://github.com/Ann-pixel/mapME-portfolio"
-            target="_blank"
-            class="button code"
-            >Source Code</a
-          >
-        </div>
-        <div class="image-text-container">
-          <img class="project-image" src="/img/mapMe.png" alt="" />
-          <p class="project-title">Map Me</p>
-          <p class="description">
-            Web app to log and map & save workouts. Built using the leaflet
-            library and geolocation API.
-          </p>
-        </div>
-      </div>
-      <!-- <span class="project-line"></span> -->
-      <div class="project">
-        <div class="buttons-container">
-          <a
-            href="https://natours-annpixel.herokuapp.com/"
-            target="_blank"
-            class="button live"
-            >View Live</a
-          >
-          <a
-            href="https://github.com/Ann-pixel/Natours-API"
-            target="_blank"
-            class="button code"
-            >Source Code</a
-          >
-        </div>
-        <div class="image-text-container">
-          <img class="project-image" src="/img/natours-api.png" alt="" />
-          <p class="project-title">Natours API & app</p>
-          <p class="description">
-            This is a full stack application. The API is built using NodeJS,
-            ExpressJS, MongoDB+Mongoose. The front-end uses Javascript, CSS and
-            Pug templates.
-          </p>
-        </div>
-      </div>
-      <!-- <span class="project-line"></span> -->
+      <!-- FORKIFY -->
       <div class="project">
         <div class="buttons-container">
           <a
@@ -150,7 +87,35 @@
           </p>
         </div>
       </div>
-      <!-- <span class="project-line"></span> -->
+
+      <!-- NATOURS API -->
+      <div class="project">
+        <div class="buttons-container">
+          <a
+            href="https://natours-annpixel.herokuapp.com/"
+            target="_blank"
+            class="button live"
+            >View Live</a
+          >
+          <a
+            href="https://github.com/Ann-pixel/Natours-API"
+            target="_blank"
+            class="button code"
+            >Source Code</a
+          >
+        </div>
+        <div class="image-text-container">
+          <img class="project-image" src="/img/natours-api.png" alt="" />
+          <p class="project-title">Natours API & app</p>
+          <p class="description">
+            This is a full stack application. The API is built using NodeJS,
+            ExpressJS, MongoDB+Mongoose. The front-end uses Javascript, CSS and
+            Pug templates.
+          </p>
+        </div>
+      </div>
+
+      <!-- CROWN CLOTHING -->
       <div class="project">
         <div class="buttons-container">
           <a
@@ -175,7 +140,32 @@
           </p>
         </div>
       </div>
-      <!-- <span class="project-line"></span> -->
+      <!-- MAP ME -->
+      <div class="project">
+        <div class="buttons-container">
+          <a
+            href="https://ann-pixel.github.io/mapME-portfolio/"
+            target="_blank"
+            class="button live"
+            >View Live</a
+          >
+          <a
+            href="https://github.com/Ann-pixel/mapME-portfolio"
+            target="_blank"
+            class="button code"
+            >Source Code</a
+          >
+        </div>
+        <div class="image-text-container">
+          <img class="project-image" src="/img/mapMe.png" alt="" />
+          <p class="project-title">Map Me</p>
+          <p class="description">
+            Web app to log and map & save workouts. Built using the leaflet
+            library and geolocation API.
+          </p>
+        </div>
+      </div>
+      <!-- SCRAP BOOK -->
       <div class="project">
         <div class="buttons-container">
           <a
@@ -200,8 +190,8 @@
           </p>
         </div>
       </div>
-      <!-- <span class="project-line"></span> -->
 
+      <!-- NEXTER -->
       <div class="project">
         <div class="buttons-container">
           <a
@@ -226,7 +216,7 @@
           </p>
         </div>
       </div>
-      <!-- <span class="project-line"></span> -->
+      <!-- PIG GAME -->
       <div class="project">
         <div class="buttons-container">
           <a
@@ -250,7 +240,32 @@
           </p>
         </div>
       </div>
-      <!-- <span class="project-line"></span> -->
+      <!-- BANKIST -->
+      <div class="project">
+        <div class="buttons-container">
+          <a
+            href="https://ann-pixel.github.io/bankist-portfolio/"
+            target="_blank"
+            class="button live"
+            >View Live</a
+          >
+          <a
+            href="https://github.com/Ann-pixel/bankist-portfolio"
+            target="_blank"
+            class="button code"
+            >Source Code</a
+          >
+        </div>
+        <div class="image-text-container">
+          <img class="project-image" src="/img/bankist.png" alt="" />
+          <p class="project-title">Bankist- landing page</p>
+          <p class="description">
+            Marketing page for a banking application. Built using advanced DOM
+            traversing and browser tools such as the Intersection Observer API.
+          </p>
+        </div>
+      </div>
+      <!-- NASA APOD -->
       <div class="project">
         <div class="buttons-container">
           <a
@@ -276,7 +291,8 @@
         </div>
       </div>
     </section>
-    <section id="connect" class="connect">
+    <!---------------- CONNECT----------------->
+    <section id="connect" class="connect hidden">
       <h1>Like what you see? Let's get in touch!</h1>
       <div class="icon-container">
         <div class="icons">

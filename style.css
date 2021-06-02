@@ -1,17 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Montserrat:wght@300&display=swap");
 :root {
-  /* --on-title: #d8a68d; */
-  /* --on-title: #ebe994; */
-  /* --on-title: #99c9cc; */
-  /* --on-title: #5ba554; */
   --on-title: #4c979c;
-
-  /* --section-background: #fff9f6; */
-  /* --section-background: #f5eecf; */
-  /* --section-background: #d2e2e2; */
-  /* --project-background: #d2dddd; */
-  /* --section-background: #d4f0d8; */
   --background-on-body: #f0fcff;
+  --background-on-nav: #d5e0e2;
   --onsub-title: #817e7e;
   --on-line: #99c9cc3d;
   --on-background-header-footer: #444141;
@@ -20,6 +11,14 @@
   --project-background: #e0e6e7ab;
   --title-font: "Montserrat", sans-serif;
   --text-font: "Lora", serif;
+
+  /* 
+  #FBFEFD
+  #150F07
+  #26190D
+  #49BDC2
+  #F2EED7 
+  */
 }
 
 html {
@@ -31,7 +30,7 @@ body {
   overflow-x: hidden;
   background: var(--section-background);
   background-color: var(var(--background-on-body));
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='29' height='29' fill-opacity='0.15' fill='%234c979c'/%3E%3C/svg%3E");
+  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='29' height='29' fill-opacity='0.15' fill='%234c979c'/%3E%3C/svg%3E"); */
 
   display: flex;
   flex-direction: column;
@@ -68,6 +67,7 @@ h1 {
   color: var(--onsub-title);
   letter-spacing: 4rem;
   margin: 0;
+  text-align: center;
 }
 /* navigation */
 .navigation {
@@ -75,6 +75,7 @@ h1 {
   justify-content: space-around;
   align-items: center;
 }
+
 .nav-items {
   font-size: 4rem;
   font-weight: 600;
@@ -86,7 +87,9 @@ h1 {
   color: var(--on-section-text);
   letter-spacing: 1rem;
   cursor: pointer;
+  text-align: center;
 }
+
 .nav-items:hover {
   color: var(--onsub-title);
 }
@@ -97,6 +100,7 @@ h1 {
   width: inherit;
   background-color: var(--onsub-title);
 }
+
 /* projects */
 .projects {
   margin: 3rem auto;
@@ -268,9 +272,13 @@ footer p {
   font-size: 2rem;
 }
 
+.color-change {
+  background-color: var(--on-title);
+}
 .hidden {
   display: none;
 }
+
 @media screen and (max-width: 800px) {
   html {
     font-size: 55%;
