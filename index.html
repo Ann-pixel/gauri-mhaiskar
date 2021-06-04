@@ -14,29 +14,33 @@
   </head>
 
   <body>
-    <section class="header" id="header">
-      <div class="header-text">
-        <h1>Gauri Mhaiskar</h1>
-        <h2>web developer</h2>
-      </div>
-    </section>
-    <!------------NAVIGATION------------->
+    <div class="overlay overlay-slide-left" id="overlay">
+      <!-- menu items -->
+      <nav>
+        <ul>
+          <li id="nav-1" class="slide-out-1"><a href="#home">Home</a></li>
+          <li id="nav-2" class="slide-out-2"><a href="#about">About</a></li>
+          <li id="nav-3" class="slide-out-3"><a href="#blogs">Blogs</a></li>
+          <li id="nav-4" class="slide-out-4">
+            <a href="#projects">Projects</a>
+          </li>
+          <li id="nav-5" class="slide-out-5"><a href="#connect">Connect</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- menu bars -->
+    <div class="menu-bars" id="menu-bars">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
 
-    <section class="navigation">
-      <span class="nav-bg"></span>
-      <h3 class="nav-items about-nav" title="Click to know about me!">About</h3>
-      <h3
-        class="nav-items projects-nav"
-        title="Click to check out some of my work!"
-      >
-        Projects
-      </h3>
-      <h3 class="nav-items connect-nav" title="Click to get in touch!">
-        Connect
-      </h3>
+    <!--------------HOME--------------------->
+    <section id="home">
+      <a href="https://github.com/Ann-pixel" target="_blank">Gauri Mhaiskar</a>
     </section>
     <!---------------ABOUT------------------>
-    <section id="about" class="about hidden">
+    <section id="about" class="about">
       <img src="img/Gauri in Rockies.jpg" alt="" />
       <div class="about-intro">
         <p>
@@ -60,7 +64,7 @@
       <!-- add a resume. make sure to add more resume stuff here. -->
     </section>
     <!--------------PROJECTS ----------------->
-    <section id="projects" class="projects hidden">
+    <section id="projects" class="projects">
       <!-- FORKIFY -->
       <div class="project">
         <div class="buttons-container">
@@ -291,8 +295,9 @@
         </div>
       </div>
     </section>
+    <section id="blogs">BLOGS: coming soon!</section>
     <!---------------- CONNECT----------------->
-    <section id="connect" class="connect hidden">
+    <section id="connect" class="connect">
       <h1>Like what you see? Let's get in touch!</h1>
       <div class="icon-container">
         <div class="icons">
@@ -336,9 +341,10 @@
         </div>
       </div>
     </section>
-    <footer class="footer">
+    <!----------------FOOTER------------------->
+    <!-- <footer class="footer">
       <p>Design & Code by Gauri Mhaiskar</p>
-    </footer>
+    </footer> -->
     <!-- Script -->
     <script src="script.js"></script>
   </body>
