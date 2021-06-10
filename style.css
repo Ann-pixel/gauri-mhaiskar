@@ -5,7 +5,7 @@
 
   --primaryColor: #e4dfd6;
   --lightPrimaryColor: #e7e3de;
-  /* --lightPrimaryColor: #f5f1e9; */
+
   --navColor5: #dac8b2;
   --navColor4: #b27c6b;
   --navColor3: #424041;
@@ -234,14 +234,24 @@ section {
   width: 80%;
   margin: 3rem auto;
 }
+.about-container h3 {
+  text-transform: uppercase;
+  font-family: var(--title-font);
+  font-weight: 800;
+  margin: auto 1rem;
+  font-size: 3rem;
+  text-align: center;
+  color: var(--navColor3);
+  border-bottom: 3px solid var(--primaryColor);
+}
 .image-collage {
   width: 100%;
-  min-height: 20rem;
+  min-height: 25rem;
   background-color: var(--navColor1);
   box-shadow: var(--shadow);
 }
 .skills-and-story {
-  margin: 2rem auto;
+  margin: 4rem auto;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -252,12 +262,15 @@ section {
   width: 100%;
   padding: 2rem 2rem;
   box-shadow: var(--shadow);
+  font-size: 2rem;
+  font-family: var(--text-font);
 }
 .story-container {
-  margin-right: 1rem;
+  margin-right: 1.5rem;
+  text-align: justify;
 }
 .skills-container {
-  margin-left: 1rem;
+  margin-left: 1.5rem;
 }
 /* projects */
 .projects-container {
