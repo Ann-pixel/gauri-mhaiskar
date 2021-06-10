@@ -4,11 +4,15 @@
   --text-font: "Lora", serif;
 
   --primaryColor: #e4dfd6;
+  --lightPrimaryColor: #e7e3de;
+  /* --lightPrimaryColor: #f5f1e9; */
   --navColor5: #dac8b2;
   --navColor4: #b27c6b;
   --navColor3: #424041;
   --navColor2: #88acb2;
   --navColor1: #d2e4e6;
+
+  --shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 html {
@@ -230,16 +234,30 @@ section {
   width: 80%;
   margin: 3rem auto;
 }
+.image-collage {
+  width: 100%;
+  min-height: 20rem;
+  background-color: var(--navColor1);
+  box-shadow: var(--shadow);
+}
 .skills-and-story {
+  margin: 2rem auto;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+.about-sections {
+  background-color: var(--lightPrimaryColor);
+  width: 100%;
+  padding: 2rem 2rem;
+  box-shadow: var(--shadow);
 }
 .story-container {
-  width: 50%;
+  margin-right: 1rem;
 }
 .skills-container {
-  width: 50%;
+  margin-left: 1rem;
 }
 /* projects */
 .projects-container {
@@ -256,8 +274,8 @@ section {
   transition: all 0.2s;
   height: 100%;
   width: 100%;
-
-  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.2);
+  background-color: var(--lightPrimaryColor);
+  box-shadow: var(--shadow);
 }
 
 .buttons-container {
@@ -392,7 +410,7 @@ section {
 /* footer */
 footer {
   color: var(--on-title);
-  background-color: var(--on-background-header-footer);
+
   width: 100%;
   font-family: var(--title-font);
   display: flex;
