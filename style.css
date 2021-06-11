@@ -435,22 +435,39 @@ footer p {
   font-size: 2rem;
 }
 
+@media screen and (max-width: 1300px) {
+  .skills-and-story {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .story-container {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  .skills-container {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+  }
+}
 @media screen and (max-width: 800px) {
   html {
     font-size: 55%;
   }
-  .projects {
-    grid-template-columns: repeat(2, 1fr);
+  .projects-container {
+    grid-template-columns: repeat(1, 1fr);
     width: 80%;
   }
 }
 @media screen and (max-width: 600px) {
   html {
     font-size: 50%;
-  }
-  .projects {
-    grid-template-columns: repeat(1, 1fr);
-    width: 80%;
   }
 }
 @media screen and (max-width: 500px) {
