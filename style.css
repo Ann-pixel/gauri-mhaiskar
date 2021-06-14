@@ -189,7 +189,7 @@ section {
   color: var(--primaryColor);
 }
 .home {
-  background-image: url("./img/background-img.jpg");
+  background-image: url("https://ann-pixel.github.io/gauri-mhaiskar/img/background-img.jpg");
 
   background-size: cover;
   background-position: center center;
