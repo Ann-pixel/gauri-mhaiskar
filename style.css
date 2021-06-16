@@ -235,8 +235,8 @@ section {
   margin: 3rem auto;
 }
 .about-container h3 {
-  text-transform: uppercase;
-  font-family: var(--title-font);
+  /* text-transform: uppercase; */
+  font-family: var(--text-font);
   font-weight: 800;
   margin: auto 1rem;
   font-size: 3rem;
@@ -263,7 +263,7 @@ section {
   padding: 2rem 2rem;
   box-shadow: var(--shadow);
   font-size: 2rem;
-  font-family: var(--text-font);
+  font-family: var(--title-font);
 }
 .story-container {
   margin-right: 1.5rem;
