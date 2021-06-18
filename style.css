@@ -227,15 +227,31 @@ section {
 /* about */
 .about-container {
   color: var(--navColor3);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 80%;
   margin: 3rem auto;
 }
+.text-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-text {
+  font-size: 2rem;
+  font-family: var(--text-font);
+  width: 100%;
+}
+.about-image {
+  max-width: 100%;
+  height: 60vh;
+  flex-flow: row nowrap;
+  align-items: center;
+  object-fit: cover;
+  overflow: hidden;
+}
+/*
 .about-container h3 {
   /* text-transform: uppercase; */
+/*
   font-family: var(--text-font);
   font-weight: 800;
   margin: auto 1rem;
@@ -256,8 +272,8 @@ section {
   display: flex;
   justify-content: center;
   min-height: 100%;
-}
-.about-sections {
+} */
+/* .about-sections {
   background-color: var(--lightPrimaryColor);
   width: 100%;
   padding: 2rem 2rem;
@@ -271,7 +287,7 @@ section {
 }
 .skills-container {
   margin-left: 1.5rem;
-}
+} */
 /* projects */
 .projects-container {
   margin: 3rem auto;
