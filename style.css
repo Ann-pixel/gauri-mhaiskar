@@ -227,7 +227,7 @@ section {
 /* about */
 .about-container {
   color: var(--navColor3);
-  width: 80%;
+  max-width: 80%;
   margin: 3rem auto;
 }
 .text-image {
@@ -236,17 +236,20 @@ section {
   align-items: center;
 }
 .about-text {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: var(--text-font);
-  width: 100%;
+  flex: 2;
+  text-align: justify;
 }
 .about-image {
+  flex: 1;
+}
+.about-image-img {
   max-width: 100%;
-  height: 60vh;
-  flex-flow: row nowrap;
-  align-items: center;
+  height: auto;
   object-fit: cover;
-  overflow: hidden;
+  margin-left: 3rem;
+  border: 2px solid var(--navColor4);
 }
 /*
 .about-container h3 {
