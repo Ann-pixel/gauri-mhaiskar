@@ -251,46 +251,70 @@ section {
   margin-left: 3rem;
   border: 2px solid var(--navColor4);
 }
-/*
-.about-container h3 {
-  /* text-transform: uppercase; */
-/*
-  font-family: var(--text-font);
-  font-weight: 800;
-  margin: auto 1rem;
+.about-skills {
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+}
+.about-skills h4 {
+  font-family: var(--title-font);
+  text-transform: uppercase;
   font-size: 3rem;
-  text-align: center;
-  color: var(--navColor3);
-  border-bottom: 3px solid var(--primaryColor);
 }
-.image-collage {
-  width: 100%;
-  min-height: 25rem;
-  background-color: var(--navColor1);
-  box-shadow: var(--shadow);
-}
-.skills-and-story {
-  margin: 4rem auto;
-  width: 100%;
+.skills {
   display: flex;
   justify-content: center;
-  min-height: 100%;
-} */
-/* .about-sections {
-  background-color: var(--lightPrimaryColor);
+  align-items: center;
   width: 100%;
-  padding: 2rem 2rem;
-  box-shadow: var(--shadow);
-  font-size: 2rem;
+}
+.skills-list {
   font-family: var(--title-font);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.25rem;
+  list-style: none;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.story-container {
-  margin-right: 1.5rem;
-  text-align: justify;
+
+.bar-container {
+  width: 100%;
+  background-color: var(--navColor3);
+  margin-bottom: 2rem;
 }
-.skills-container {
-  margin-left: 1.5rem;
-} */
+.skill {
+  background-color: var(--navColor2);
+  padding: 0.25rem 0 0.25rem 1rem;
+}
+.html {
+  width: 80%;
+}
+.css {
+  width: 80%;
+}
+.js {
+  width: 75%;
+}
+.react {
+  width: 65%;
+}
+.node {
+  width: 60%;
+}
+.mongo {
+  width: 60%;
+}
+.mysql {
+  width: 50%;
+}
+
 /* projects */
 .projects-container {
   margin: 3rem auto;
@@ -367,7 +391,7 @@ section {
   margin: auto 2rem;
   color: var(--navColor3);
   font-family: var(--text-font);
-  font-size: 1.5rem;
+  font-size: 2rem;
   letter-spacing: 0.1rem;
   text-align: justify;
   font-weight: 600;
