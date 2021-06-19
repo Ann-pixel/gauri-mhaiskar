@@ -533,6 +533,9 @@ footer p {
   body {
     margin: 0;
   }
+  .skills-list {
+    width: 100%;
+  }
   .icon {
     font-size: 7rem;
     margin: auto 4rem;
@@ -553,6 +556,7 @@ footer p {
     letter-spacing: 2rem;
     margin-top: 0.5rem;
   }
+
   .icon {
     font-size: 7rem;
     margin: auto 2.5rem;
