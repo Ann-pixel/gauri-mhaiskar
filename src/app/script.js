@@ -1,6 +1,3 @@
-// alert("Baaaaaaaaaaaaa! Youre on! 🎇");
-
-// alert("Baaaaaaaaaaaaa! Youre on! 🎇");
 const menuBars = document.getElementById("menu-bars");
 const overlay = document.getElementById("overlay");
 const nav1 = document.getElementById("nav-1");

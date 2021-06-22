@@ -1,0 +1,23 @@
+{
+  "name": "gauri-mhaiskar",
+  "version": "1.0.0",
+  "description": "Gauri Mhaiskar's website",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ann-pixel/gauri-mhaiskar.git"
+  },
+  "author": "Gauri Mhaiskar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ann-pixel/gauri-mhaiskar/issues"
+  },
+  "homepage": "https://github.com/Ann-pixel/gauri-mhaiskar#readme",
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.3.1"
+  }
+}
