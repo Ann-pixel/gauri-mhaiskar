@@ -322,7 +322,7 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 80%;
-  grid-gap: 3rem;
+  grid-gap: 4rem;
 }
 .project {
   /* display: flex;
